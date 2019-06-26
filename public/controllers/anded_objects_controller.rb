@@ -1,4 +1,4 @@
-class ObjectsController <  ApplicationController
+class AndedObjectsController <  ApplicationController
   include ResultInfo
   helper_method :process_repo_info
   helper_method :process_subjects
@@ -148,3 +148,5 @@ class ObjectsController <  ApplicationController
   end
 
 end
+::ObjectsController
+::ObjectsController = AndedObjectsController

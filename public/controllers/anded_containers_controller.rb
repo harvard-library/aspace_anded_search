@@ -1,4 +1,4 @@
-class ContainersController < ApplicationController
+class AndedContainersController < ApplicationController
 
   def show
     uri = "/repositories/#{params[:rid]}/top_containers/#{params[:id]}"
@@ -45,3 +45,5 @@ class ContainersController < ApplicationController
   end
 
 end
+::ContainersController
+::ContainersController = AndedContainersController

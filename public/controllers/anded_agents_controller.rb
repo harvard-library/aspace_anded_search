@@ -1,4 +1,4 @@
-class AgentsController <  ApplicationController
+class AndedAgentsController < ApplicationController
   include ResultInfo
 
   skip_before_action  :verify_authenticity_token
@@ -137,3 +137,5 @@ class AgentsController <  ApplicationController
     @results
   end
 end
+::AgentsController
+::AgentsController = AndedAgentsController

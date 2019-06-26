@@ -1,4 +1,4 @@
-class AccessionsController <  ApplicationController
+class AndedAccessionsController <  ApplicationController
   include ResultInfo
 
   skip_before_action  :verify_authenticity_token
@@ -104,3 +104,5 @@ class AccessionsController <  ApplicationController
     end
   end
 end
+::AccessionsController
+::AccessionsController = AndedAccessionsController

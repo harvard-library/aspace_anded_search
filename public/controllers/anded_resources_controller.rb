@@ -1,4 +1,4 @@
-class ResourcesController < ApplicationController
+class AndedResourcesController < ApplicationController
   include ResultInfo
   helper_method :process_repo_info
   helper_method :process_subjects
@@ -300,3 +300,6 @@ class ResourcesController < ApplicationController
   end
 
 end
+
+::ResourcesController
+::ResourcesController = AndedResourcesController

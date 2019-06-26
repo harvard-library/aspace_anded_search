@@ -1,4 +1,4 @@
-class SearchController < ApplicationController
+class AndedSearchController < ApplicationController
 
   include PrefixHelper
 
@@ -63,3 +63,5 @@ class SearchController < ApplicationController
   end
 
 end
+::SearchController
+::SearchController = AndedSearchController

@@ -1,6 +1,6 @@
 require 'advanced_query_builder'
 
-module Searchable
+module AndedSearchable
   extend ActiveSupport::Concern
 # also sets up searches, handles search results.
 # TODO: refactor processing
@@ -411,3 +411,5 @@ module Searchable
   end
 
 end
+::Searchable
+::Searchable = AndedSearchable

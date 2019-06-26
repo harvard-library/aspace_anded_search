@@ -1,4 +1,4 @@
-class ClassificationsController <  ApplicationController
+class AndedClassificationsController <  ApplicationController
 
   include ResultInfo
 
@@ -188,3 +188,5 @@ class ClassificationsController <  ApplicationController
     render json: {}, status: 404
   end
 end
+::ClassificationsController
+::ClassificationsController = AndedClassificationsController
