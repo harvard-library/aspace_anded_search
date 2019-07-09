@@ -1,4 +1,5 @@
-class AndedSearch < Search
+::Search
+class Search
   def get_filter_q_arr(url = nil)
     fqa = []
     self[:filter_q].each do |v|
@@ -9,5 +10,3 @@ class AndedSearch < Search
     fqa
   end
 end
-::Search
-::Search = AndedSearch

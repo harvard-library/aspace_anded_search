@@ -1,14 +1,5 @@
-require 'advanced_query_builder'
-
-module AndedSearchable
-  extend ActiveSupport::Concern
-# also sets up searches, handles search results.
-# TODO: refactor processing
-  ABSTRACT = %w(abstract scopecontent)
-
-  class NoResultsError < StandardError; end
-
-
+::Searchable
+module Searchable
   def set_up_search(default_types = [],default_facets=[],default_search_opts={}, params={}, q='')
     @search = Search.new(params)
     limit = params.fetch(:limit,'')
@@ -411,5 +402,3 @@ module AndedSearchable
   end
 
 end
-::Searchable
-::Searchable = AndedSearchable

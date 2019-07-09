@@ -1,16 +1,5 @@
-class AndedSearchController < ApplicationController
-
-  include PrefixHelper
-
-  DEFAULT_SEARCH_FACET_TYPES = ['repository','primary_type', 'subjects', 'published_agents']
-  DEFAULT_SEARCH_OPTS = {
-#    'sort' => 'title_sort asc',
-    'resolve[]' => ['repository:id', 'resource:id@compact_resource', 'ancestors:id@compact_resource', 'top_container_uri_u_sstr:id'],
-    'facet.mincount' => 1
-  }
-  DEFAULT_TYPES =  %w{archival_object digital_object agent resource repository accession classification subject}
-
-
+::SearchController
+class SearchController
   def search
     @repo_id = params.fetch(:rid, nil)
     repo_url = "/repositories/#{@repo_id}"
@@ -61,7 +50,4 @@ class AndedSearchController < ApplicationController
       render 'search/search_results'
     end
   end
-
 end
-::SearchController
-::SearchController = AndedSearchController
